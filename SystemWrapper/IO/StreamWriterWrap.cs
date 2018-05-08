@@ -241,5 +241,57 @@ namespace SystemWrapper.IO
         {
             StreamWriterInstance.Write(buffer, index, count);
         }
+
+        /// <inheritdoc />
+        public override void WriteLine(string format, object arg0)
+        {
+            StreamWriterInstance.WriteLine(format, arg0);
+        }
+
+        /// <inheritdoc />
+        public override void WriteLine(string format, params object[] arg)
+        {
+            StreamWriterInstance.WriteLine(format, arg);
+        }
+        /// <inheritdoc />
+        public override void WriteLine(string format, object arg0, object arg1, object arg2)
+        {
+            StreamWriterInstance.WriteLine(format, arg0, arg1, arg2);
+        }
+        /// <inheritdoc />
+        public override void WriteLine(string format, object arg0, object arg1)
+        {
+            StreamWriterInstance.WriteLine(format, arg0, arg1);
+        }
+        /// <inheritdoc />
+        public override void WriteLine(object value)
+        {
+            StreamWriterInstance.WriteLine(value);
+        }
+        /// <inheritdoc />
+        public override void WriteLine(int value)
+        {
+            StreamWriterInstance.WriteLine(value);
+        }
+        /// <inheritdoc />
+        public override void WriteLine(decimal value)
+        {
+            StreamWriterInstance.WriteLine(value);
+        }
+        /// <inheritdoc />
+        public override void WriteLine()
+        {
+            StreamWriterInstance.WriteLine();
+        }
+        /// <inheritdoc />
+        public override void WriteLine(string value)
+        {
+            StreamWriterInstance.WriteLine(value);
+        }
+        /// <inheritdoc />
+        public override void WriteLine(char value)
+        {
+            StreamWriterInstance.WriteLine(value);
+        }
     }
 }

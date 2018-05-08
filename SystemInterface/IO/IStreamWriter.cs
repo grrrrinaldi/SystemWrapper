@@ -231,5 +231,78 @@ namespace SystemInterface.IO
         /// <param name="arg1">An object to write into the formatted string.</param>
         /// <param name="arg2">An object to write into the formatted string.</param>
         void Write(string format, object arg0, object arg1, object arg2);
+
+        /// <summary>
+        /// Writes a formatted string and a new line to the text string or stream, using
+        /// the same semantics as the System.String.Format(System.String,System.Object) method.
+        /// </summary>
+        /// <param name="format">The formatting string.</param>
+        /// <param name="arg0">An object to write into the formatted string.</param>
+        void WriteLine(string format, object arg0);
+
+        /// <summary>
+        /// Writes a formatted string and a new line to the text string or stream, using
+        /// the same semantics as the System.String.Format(System.String,System.Object) method.
+        /// </summary>
+        /// <param name="format">The formatting string.</param>
+        /// <param name="arg">An object array that contains zero or more objects to format and write.</param>
+        void WriteLine(string format, params object[] arg);
+
+        /// <summary>
+        /// Writes a formatted string and a new line to the text string or stream, using
+        /// the same semantics as the System.String.Format(System.String,System.Object) method.
+        /// </summary>
+        /// <param name="format">The formatting string.</param>
+        /// <param name="arg0">The first object to write into the formatted string.</param>
+        /// <param name="arg1">The second object to write into the formatted string.</param>
+        /// <param name="arg2">The third object to write into the formatted string.</param>
+        void WriteLine(string format, object arg0, object arg1, object arg2);
+
+        /// <summary>
+        /// Writes a formatted string and a new line to the text string or stream, using
+        /// the same semantics as the System.String.Format(System.String,System.Object) method.
+        /// </summary>
+        /// <param name="format">The formatting string.</param>
+        /// <param name="arg0">The first object to write into the formatted string.</param>
+        /// <param name="arg1">The second object to write into the formatted string.</param>
+        void WriteLine(string format, object arg0, object arg1);
+
+        /// <summary>
+        /// Writes the text representation of an object by calling the ToString method on
+        /// that object, followed by a line terminator to the text string or stream.
+        /// </summary>
+        /// <param name="value">The object to write. If value is null, only the line terminator is written.</param>
+        void WriteLine(object value);
+
+        /// <summary>
+        /// Writes the text representation of a 4-byte signed integer followed by a
+        /// line terminator to the text string or stream.
+        /// </summary>
+        /// <param name="value">The 4-byte signed integer to write.</param>
+        void WriteLine(int value);
+
+        /// <summary>
+        /// Writes the text representation of a decimal value followed by a
+        /// line terminator to the text string or stream.
+        /// </summary>
+        /// <param name="value">The decimal value to write.</param>
+        void WriteLine(decimal value);
+
+        /// <summary>
+        /// Writes a line terminator to the text string or stream.
+        /// </summary>
+        void WriteLine();
+
+        /// <summary>
+        /// Writes a string followed by a line terminator to the text string or stream.
+        /// </summary>
+        /// <param name="value">The string to write to the stream.</param>
+        void WriteLine(string value);
+
+        /// <summary>
+        /// Writes a character followed by a line terminator to the text string or stream.
+        /// </summary>
+        /// <param name="value">The character to write to the stream.</param>
+        void WriteLine(char value);
     }
 }
